@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 03d64ec059eb6a44aa78c420e44b056d
+guid: 13ac7866cf206e34092dfc937c4751a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2931194010432298028
-    second: Gun 1_0
+      213: 1416638548636793334
+    second: ShootCursor_0
+  - first:
+      213: 7820580524765495079
+    second: ShootCursor_1
+  - first:
+      213: -4774779065829823649
+    second: ShootCursor_2
+  - first:
+      213: -7292940472572859431
+    second: ShootCursor_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gun 1_0
+      name: ShootCursor_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 10
-        width: 16
-        height: 10
+        x: 10
+        y: 25
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2cd19f1c61bda820800000000000000
-      internalID: 2931194010432298028
+      spriteID: 6f9fe9a1149e8a310800000000000000
+      internalID: 1416638548636793334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootCursor_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 25
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f3cf35d88488c60800000000000000
+      internalID: 7820580524765495079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootCursor_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bed3cccb39cbdb0800000000000000
+      internalID: -4774779065829823649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootCursor_3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 10
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dba934a7454aca90800000000000000
+      internalID: -7292940472572859431
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gun 1_0: 2931194010432298028
+      ShootCursor_0: 1416638548636793334
+      ShootCursor_1: 7820580524765495079
+      ShootCursor_2: -4774779065829823649
+      ShootCursor_3: -7292940472572859431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
