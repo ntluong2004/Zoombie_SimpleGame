@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - GunBullet
+  - Enemy
+  - Energy
   layers:
   - Default
   - TransparentFX
@@ -62,6 +64,15 @@ TagManager:
     locked: 0
   - name: Trees
     uniqueID: 68933915
+    locked: 0
+  - name: Enemy
+    uniqueID: 3530198585
+    locked: 0
+  - name: HpBar
+    uniqueID: 2608276487
+    locked: 0
+  - name: Energy
+    uniqueID: 3794644241
     locked: 0
   m_RenderingLayers:
   - Default

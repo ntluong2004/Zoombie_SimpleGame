@@ -1,12 +1,24 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Enemy : MonoBehaviour
 {
     [SerializeField] protected float enemyMoveSpeed = 1f;
+    [SerializeField] protected float maxHp = 50f;
+    [SerializeField] private Image hpBar;
+
+    [SerializeField] protected float enterDamege = 10f; //dame khi enemy cham vao player
+    [SerializeField] protected float stayDamege = 1f; //dame khi enemy o gan player
+
+
+    protected float currentHp;
     protected Player player;
+
     protected virtual void Start()
     {
       player = FindAnyObjectByType<Player>();
+        currentHp = maxHp;
+        UpdateHpBar();
 
     }
     protected virtual void Update()
@@ -31,13 +43,27 @@ public abstract class Enemy : MonoBehaviour
         }
         }
 
-    public virtual void TakeDamage()
+    public virtual void TakeDamage(float damage)
     {
-        Die();
+        currentHp -= damage;
+        currentHp = Mathf.Max(currentHp, 0);
+        UpdateHpBar();
+        if (currentHp <= 0)
+            {
+            Die();
+        }
     }
 
     public virtual void Die()
     {
         Destroy(gameObject);
+    }
+
+    protected void UpdateHpBar()
+    {
+        if (hpBar != null)
+        {
+            hpBar.fillAmount = currentHp / maxHp;
+        }
     }
 }

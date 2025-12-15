@@ -5,6 +5,7 @@ public class GunBullet : MonoBehaviour
 
     [SerializeField] private float moveSpeed = 25f;
     [SerializeField] private float TimeDestroy = 0.5f;
+    [SerializeField] private float damage = 10f;
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class GunBullet : MonoBehaviour
             Enemy enemy = collision.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage();
+                enemy.TakeDamage(damage);
             }
             Destroy(gameObject);
         }
